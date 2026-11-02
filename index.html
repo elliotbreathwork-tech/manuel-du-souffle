@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="fr">
 <head>
+<meta name="color-scheme" content="light only">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Le Souffle, manuel d'utilisation</title>
@@ -10,7 +11,6 @@
 <meta name="theme-color" content="#2B6E76">
 <style>
   html{background:#FFFFFF;}
-  @media (prefers-color-scheme: dark){ html{background:#0B0E12;} }
   body{margin:0;}
 </style>
 <style>
@@ -26,18 +26,6 @@
     --serif: Charter, "Iowan Old Style", "Hoefler Text", Georgia, serif;
     --r-sm:10px; --r:16px; --r-lg:22px;
     color-scheme: light;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --ink:#F2F4F6; --ink-2:#C7CFD6; --ink-3:#98A2AC; --ink-4:#6A757F; --ink-5:#4B535B;
-      --paper:#0B0E12; --paper-2:#10141A; --paper-3:#161B22; --paper-4:#1D242C;
-      --rule:#262E38; --rule-soft:#1D242C; --rule-firm:#333D48;
-      --accent:#7FC9D1; --accent-2:#9DD8DE; --accent-3:#3F8F98; --accent-wash:#12282A; --accent-line:#1E3F42;
-      --pos:#4FBE95; --pos-wash:#10261E; --pos-line:#1D3A2E;
-      --warn:#D9A857; --warn-wash:#2B2213; --warn-line:#3C3018;
-      --neg:#E08A8C; --neg-wash:#2B1516; --neg-line:#3C1E1F;
-      color-scheme: dark;
-    }
   }
 
   *{box-sizing:border-box;}
@@ -118,11 +106,6 @@
   .souffle .geste{background:var(--ink); color:rgba(255,255,255,.86); border-radius:var(--r); padding:17px 18px; font-size:15px; line-height:1.55; margin-bottom:18px;}
   .souffle .geste .label{font-size:10.5px; font-weight:660; letter-spacing:.09em; text-transform:uppercase; color:rgba(255,255,255,.46); margin-bottom:6px;}
   .souffle .geste strong{color:#fff;}
-  @media (prefers-color-scheme: dark){
-    .souffle .geste{background:var(--paper-4); color:var(--ink);}
-    .souffle .geste .label{color:var(--ink-4);}
-    .souffle .geste strong{color:var(--ink);}
-  }
 
   .souffle .pacer{background:var(--paper); border:1px solid var(--rule); border-radius:var(--r-lg); padding:22px 18px 20px; text-align:center; margin-bottom:18px;}
   .souffle .pacer__stage{position:relative; height:150px; display:flex; align-items:center; justify-content:center; margin-bottom:14px;}
